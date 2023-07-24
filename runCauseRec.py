@@ -24,6 +24,7 @@ if __name__ == '__main__':
     # Data
     parser.add_argument('--dataset', default='book', type=str)
     parser.add_argument('--data_aug', action='store_false', help='data augmentation')
+    parser.add_argument('--max_len', default=20, type=int, help='max sequence length')
     # Training
     parser.add_argument('--epoch_num', default=150, type=int)
     parser.add_argument('--train_batch', default=1024, type=int)
